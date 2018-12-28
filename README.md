@@ -7,7 +7,7 @@ PHP-FPM 7.2.13 use **ONLY** for development environment
 [![](https://images.microbadger.com/badges/image/feries/php7.2.svg)](https://microbadger.com/images/feries/php7.2 "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/feries/php7.2.svg)](https://microbadger.com/images/feries/php7.2 "Get your own version badge on microbadger.com")
 
-*Based on **[php:7.2.13-fpm](https://github.com/docker-library/php/blob/master/7.1/jessie/fpm/Dockerfile)***
+*Based on **[php:7.2.13-fpm](https://github.com/docker-library/php/blob/master/7.2/stretch/fpm/Dockerfile)***
 
 ## Services
 

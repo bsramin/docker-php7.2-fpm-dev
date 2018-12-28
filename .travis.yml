@@ -1,0 +1,16 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t feries/php7.2 .
+  - docker run --name php7.2 -d feries/php7.2
+
+script:
+  - docker exec php7.2 php -v
+  - docker exec php7.2 sh -c "php -v | grep OPcache"
+  - docker exec php7.2 sh -c "php -v | grep Xdebug"
+  - docker exec php7.2 composer --version
+  - docker exec php7.2 sh -c "php -i | grep intl"
+  - docker exec php7.2 sh -c "php -i | grep 'API Extensions => pdo_mysql'"

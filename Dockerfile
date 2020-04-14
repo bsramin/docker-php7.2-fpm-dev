@@ -1,12 +1,12 @@
-FROM php:7.2.13-fpm
+FROM php:7.2.29-fpm
 MAINTAINER Ramin Banihashemi <a@ramin.it>
 
 LABEL \
-    name="Feries's PHP-FPM 7.2.13-Dev Image" \
-    image="php-fpm-7.2.13" \
+    name="Feries's PHP-FPM 7.2.29-Dev Image" \
+    image="php-fpm-7.2.29" \
     vendor="feries" \
     license="GPLv3" \
-    build-date="2018-12-28"
+    build-date="2020-04-15"
 
 ENV DEBIAN_FRONTEND noninteractive
 

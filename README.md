@@ -3,7 +3,7 @@ PHP-FPM 7.2.29 use **ONLY** for development environment
 
 **Good for the latest stable version of symfony**
 
-[![Build Status](https://travis-ci.org/ramin/docker-php7.2-fpm-dev.svg?branch=master)](https://travis-ci.org/ramin/docker-php7.2-fpm-dev)
+[![Build Status](https://api.travis-ci.com/bsramin/docker-php7.2-fpm-dev.svg?branch=master)](https://travis-ci.com/github/bsramin/docker-php7.2-fpm-dev)
 [![](https://images.microbadger.com/badges/image/ramin/php7.2.svg)](https://microbadger.com/images/ramin/php7.2 "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/ramin/php7.2.svg)](https://microbadger.com/images/ramin/php7.2 "Get your own version badge on microbadger.com")
 

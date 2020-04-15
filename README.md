@@ -1,17 +1,17 @@
-# PHP-FPM 7.2.13-DEV Docker
-PHP-FPM 7.2.13 use **ONLY** for development environment
+# PHP-FPM 7.2.29-DEV Docker
+PHP-FPM 7.2.29 use **ONLY** for development environment
 
 **Good for the latest stable version of symfony**
 
-[![Build Status](https://travis-ci.org/feries/docker-php7.2-fpm-dev.svg?branch=master)](https://travis-ci.org/feries/docker-php7.2-fpm-dev)
-[![](https://images.microbadger.com/badges/image/feries/php7.2.svg)](https://microbadger.com/images/feries/php7.2 "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/feries/php7.2.svg)](https://microbadger.com/images/feries/php7.2 "Get your own version badge on microbadger.com")
+[![Build Status](https://travis-ci.org/ramin/docker-php7.2-fpm-dev.svg?branch=master)](https://travis-ci.org/ramin/docker-php7.2-fpm-dev)
+[![](https://images.microbadger.com/badges/image/ramin/php7.2.svg)](https://microbadger.com/images/ramin/php7.2 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/ramin/php7.2.svg)](https://microbadger.com/images/ramin/php7.2 "Get your own version badge on microbadger.com")
 
-*Based on **[php:7.2.13-fpm](https://github.com/docker-library/php/blob/master/7.2/stretch/fpm/Dockerfile)***
+*Based on **[php:7.2.29-fpm](https://github.com/docker-library/php/blob/master/7.2/stretch/fpm/Dockerfile)***
 
 ## Services
 
-- **PHP-FPM 7.2.13** (on *port 9001*)
+- **PHP-FPM 7.2.29** (on *port 9001*)
     - **APCu** - APC User Cache
     - **OPcache**
     - PHP extension for interfacing with **Redis** (with php session.save_handler pre-configurated with tcp://redis-session:6379)
@@ -39,7 +39,7 @@ Add new alias loopback for localhost
 
     sudo ifconfig lo0 alias 10.254.254.254 netmask 255.255.255.0
 
-or use [xdebug-starter.sh](https://github.com/feries/dch-project-sample/blob/master/container/php/xdebug-starter.sh)
+or use [xdebug-starter.sh](https://github.com/bsramin/dch-project-sample/blob/master/container/php/xdebug-starter.sh)
 
 #### Xdebug with Linux host
 
@@ -54,7 +54,7 @@ Append to file `/etc/network/interfaces`
     address 10.254.254.254
     netmask 255.255.255.0
 
-or use [xdebug-starter.sh](https://github.com/feries/dch-project-sample/blob/master/container/php/xdebug-starter.sh)
+or use [xdebug-starter.sh](https://github.com/bsramin/dch-project-sample/blob/master/container/php/xdebug-starter.sh)
 
 ***
 
@@ -73,7 +73,7 @@ And link php container with redis
 eg.
 
       php:
-          image: feries/php7.2:latest
+          image: ramin/php7.2:latest
           hostname: php
           links:
               - redis-session

@@ -20,7 +20,7 @@ ARG PHPINI="/usr/local/etc/php/php.ini"
 RUN apt-get clean && apt-get update && apt-get install -y git-core vim wget zsh libicu-dev net-tools zlib1g-dev zip unzip libpng-dev
 
 # Install latest Icu for php intl (mininum symfony requirement: icu 59.1)
-RUN curl -fsS -o /tmp/icu.tgz -L http://download.icu-project.org/files/icu4c/63.1/icu4c-63_1-src.tgz \
+RUN curl -fsS -o /tmp/icu.tgz -L https://github.com/unicode-org/icu/releases/download/release-63-1/icu4c-63_1-src.tgz \
   && tar -zxf /tmp/icu.tgz -C /tmp \
   && cd /tmp/icu/source \
   && ./configure --prefix=/usr/local \
